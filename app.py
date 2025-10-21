@@ -13,7 +13,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 # --- Ortam değişkenlerini yükle (.env dosyasından) ---
 load_dotenv()
 
-st.set_page_config(page_title="Discover Türkiye Chatbot", page_icon="🇹🇷")
+
 
 google_api_key = os.getenv("GOOGLE_API_KEY")
 
@@ -22,7 +22,7 @@ if not google_api_key:
     st.stop()
 
 # --- Streamlit sayfa başlığı ---
-
+st.set_page_config(page_title="Discover Türkiye Chatbot", page_icon="🇹🇷")
 st.title("🇹🇷 Discover Türkiye Chatbot")
 st.write("Türkiye’deki şehirleri keşfedin! Bana sorular sorun, sohbet edelim.")
 
