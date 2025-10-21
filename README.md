@@ -84,6 +84,7 @@ Uygulama çalıştırıldığında, "🇹🇷 Discover Türkiye Chatbot" başlı
 
 * **Kullanım:** Alttaki sohbet kutusuna Türkiye'deki şehirlerle ilgili sorularınızı yazabilirsiniz (Örn: "İstanbul'da nereye gidebilirim?", "Türkiye'de nerde kayak yapabilirim?", "Ankara'daki müzeler nelerdir?").
 * **Sohbet Akışı:** Chatbot, `turkiye_turizm.txt`  dosyasındaki bilgilere göre size cevap verecektir. Takip soruları sorabilirsiniz.
+
 ![Chatbot Arayüzü](Ekran görüntüsü-1.png)
 ![Chatbot Arayüzü](Ekran görüntüsü-2.png)
 
