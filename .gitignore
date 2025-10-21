@@ -1,0 +1,19 @@
+# Gizli API anahtarları
+.env
+
+# Sanal ortam klasörleri (Sizinki genai-env)
+genai-env/
+venv/
+*.venv/
+
+# Python cache dosyaları
+__pycache__/
+*.pyc
+
+# Streamlit klasörü
+.streamlit/
+
+# İşletim sistemi / IDE dosyaları
+.DS_Store
+.idea/
+.vscode/
