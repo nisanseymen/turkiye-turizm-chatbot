@@ -3,10 +3,10 @@ from dotenv import load_dotenv
 import streamlit as st
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
-from langchain.vectorstores import Chroma
-from langchain.document_loaders import TextLoader
+from langchain_community.vectorstores import Chroma # <-- DEĞİŞTİ
+from langchain_community.document_loaders import TextLoader # <-- DEĞİŞTİ
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate # <-- DEĞİŞTİ
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # --- Ortam değişkenlerini yükle (.env dosyasından) ---
