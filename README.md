@@ -49,8 +49,8 @@ Projenin lokal makinede çalıştırılması için gereken adımlar.
 
 1.  **Repoyu Klonlayın:**
     ```bash
-    git clone [https://github.com/kullanici-adiniz/repo-adiniz.git](https://github.com/kullanici-adiniz/repo-adiniz.git)
-    cd repo-adiniz
+    git clone https://github.com/nisanseymen/turkiye-turizm-chatbot.git
+    cd turkiye-turizm-chatbot
     ```
 
 2.  **Virtual Environment (Sanal Ortam) Kurulumu:**
@@ -61,7 +61,7 @@ Projenin lokal makinede çalıştırılması için gereken adımlar.
     * MacOS/Linux: `source venv/bin/activate`
 
 3.  **Bağımlılıkların Yüklenmesi:**
-    [cite_start]`requirements.txt` dosyasındaki kütüphaneleri yükleyin[cite: 22]:
+    `requirements.txt` dosyasındaki kütüphaneleri yükleyin:
     ```bash
     pip install -r requirements.txt
     ```
@@ -69,11 +69,11 @@ Projenin lokal makinede çalıştırılması için gereken adımlar.
 4.  **.env Dosyası Oluşturun:**
     Uygulamanın çalışması için bir Google API anahtarına ihtiyacı vardır. Ana dizinde `.env` adında bir dosya oluşturun ve içine şunu ekleyin:
     ```
-    GOOGLE_API_KEY="AIStudio-veya-GCP-uzerinden-aldiginiz-api-anahtari"
+    GOOGLE_API_KEY="AIStudio-uzerinden-aldiginiz-api-anahtari"
     ```
 
 5.  **Streamlit Uygulamasını Çalıştırın:**
-    Aşağıdaki komut ile web arayüzünü başlatın[cite: 22]:
+    Aşağıdaki komut ile web arayüzünü başlatın:
     ```bash
     streamlit run app.py
     ```
@@ -82,9 +82,10 @@ Projenin lokal makinede çalıştırılması için gereken adımlar.
 
 Uygulama çalıştırıldığında, "🇹🇷 Discover Türkiye Chatbot" başlıklı bir sohbet arayüzü açılır.
 
-* **Kullanım:** Alttaki sohbet kutusuna Türkiye'deki şehirlerle ilgili sorularınızı yazabilirsiniz (Örn: "İstanbul hakkında bir soru sorun...", "Amasya'da ne yenir?", "Ankara'daki müzeler nelerdir?").
-* [cite_start]**Sohbet Akışı:** Chatbot, `turkiye_turizm.txt`  dosyasındaki bilgilere göre size cevap verecektir. Takip soruları sorabilirsiniz.
-* [cite_start]**(Buraya uygulamanızın ekran görüntüsünü eklemeniz tavsiye edilir [cite: 26])**
+* **Kullanım:** Alttaki sohbet kutusuna Türkiye'deki şehirlerle ilgili sorularınızı yazabilirsiniz (Örn: "İstanbul'da nereye gidebilirim?", "Türkiye'de nerde kayak yapabilirim?", "Ankara'daki müzeler nelerdir?").
+* **Sohbet Akışı:** Chatbot, `turkiye_turizm.txt`  dosyasındaki bilgilere göre size cevap verecektir. Takip soruları sorabilirsiniz.
+![Chatbot Arayüzü](Ekran görüntüsü-1.png)
+![Chatbot Arayüzü](Ekran görüntüsü-2.png)
 
 ### Deploy Linki
-[cite_start]**[PROJENİZİ DEPLOY ETTİKTEN SONRA LİNKİ BURAYA YAPIŞTIRIN]** [cite: 14]
+[cite_start]**[PROJENİZİ DEPLOY ETTİKTEN SONRA LİNKİ BURAYA YAPIŞTIRIN]** 
