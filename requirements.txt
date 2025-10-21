@@ -7,3 +7,4 @@ chromadb
 streamlit
 python-dotenv
 google-generativeai
+# Streamlit'i yeniden yüklemeye zorla
