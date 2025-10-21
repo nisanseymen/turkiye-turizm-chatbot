@@ -1,9 +1,11 @@
-langchain
-langchain-core
-langchain-community
-langchain-google-genai
+streamlit
+langchain==0.1.14
+langchain-core==0.1.42
+langchain-community==0.0.26
+langchain-google-genai==0.0.10
 langchain-text-splitters
 chromadb
-streamlit
 python-dotenv
 google-generativeai
+faiss-cpu
+tiktoken
