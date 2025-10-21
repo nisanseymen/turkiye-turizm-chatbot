@@ -13,8 +13,6 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 # --- Ortam değişkenlerini yükle (.env dosyasından) ---
 load_dotenv()
 
-
-
 google_api_key = os.getenv("GOOGLE_API_KEY")
 
 if not google_api_key:
