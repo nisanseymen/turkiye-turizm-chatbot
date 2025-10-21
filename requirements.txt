@@ -1,7 +1,7 @@
-langchain
-langchain-google-genai
-chromadb
-streamlit
+langchain>=0.2.10
+langchain-google-genai>=0.0.10
+langchain-community>=0.2.6
+chromadb>=0.5.3
+streamlit>=1.37.0
 python-dotenv
 google-generativeai
-langchain-community
