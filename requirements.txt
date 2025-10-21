@@ -3,7 +3,7 @@ langchain==0.1.14
 langchain-core==0.1.42
 langchain-community==0.0.26
 langchain-google-genai==0.0.10
-langchain-text-splitters
+langchain-text-splitters==0.0.1
 chromadb
 python-dotenv
 google-generativeai
