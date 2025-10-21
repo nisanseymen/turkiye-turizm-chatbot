@@ -39,7 +39,19 @@ def load_and_process_data():
     vectordb = Chroma.from_documents(docs, embeddings)
     return vectordb
 
-vectordb = load_and_process_data() #Embedding’lenmiş verileri içerir
+# --- Hata Yakalama Bloğu ---
+try:
+    # Veritabanını yüklemeyi dene
+    vectordb = load_and_process_data()
+except Exception as e:
+    # Eğer yükleme başarısız olursa (API hatası, Dosya bulunamadı vs.)
+    st.error(f"❌ UYGULAMA BAŞLATILIRKEN HATA OLUŞTU:")
+    st.error(f"Hata Detayı: {e}")
+    st.warning("Lütfen aşağıdaki iki adımı kontrol edin:")
+    st.info("1. Streamlit Secrets bölümündeki GOOGLE_API_KEY anahtarınızın doğru ve geçerli olduğundan emin olun.")
+    st.info("2. 'turkiye_turizm.txt' dosyasının GitHub reponuzda 'app.py' ile aynı dizinde olduğundan emin olun.")
+    st.stop()
+# --- Bitiş ---
 
 # --- Prompt Şablonları ---
 # Bu bölümde modelin nasıl düşüneceğini ve cevap vereceğini tanımlayan iki ayrı "prompt şablonu" oluşturuluyor
