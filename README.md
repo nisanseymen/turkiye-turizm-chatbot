@@ -82,7 +82,7 @@ Projenin lokal makinede çalıştırılması için gereken adımlar.
 
 Uygulama çalıştırıldığında, "🇹🇷 Discover Türkiye Chatbot" başlıklı bir sohbet arayüzü açılır.
 
-* **Kullanım:** Alttaki sohbet kutusuna Türkiye'deki şehirlerle ilgili sorularınızı yazabilirsiniz (Örn: "İstanbul'da nereye gidebilirim?", "Türkiye'de nerde kayak yapabilirim?").
+* **Kullanım:** Alttaki sohbet kutusuna Türkiye'deki şehirlerle ilgili sorularınızı yazabilirsiniz (Örn: "İstanbul'da nereye gidebilirim?", "Türkiye'de nerde kayak yapabilirim?", "Hatay'da ne yenir?").
 * **Sohbet Akışı:** Chatbot, `turkiye_turizm.txt`  dosyasındaki bilgilere göre size cevap verecektir. Takip soruları sorabilirsiniz.
 
 ![Chatbot Arayüzü](arayuz-1.png)
