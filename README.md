@@ -89,4 +89,4 @@ Uygulama çalıştırıldığında, "🇹🇷 Discover Türkiye Chatbot" başlı
 ![Chatbot Arayüzü](arayuz-2.png)
 
 ### Deploy Linki
-[cite_start]**[PROJENİZİ DEPLOY ETTİKTEN SONRA LİNKİ BURAYA YAPIŞTIRIN]** 
+https://huggingface.co/spaces/nisanseymen/turkiye-turizm-chatbot
