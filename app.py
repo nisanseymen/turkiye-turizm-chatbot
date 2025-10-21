@@ -10,6 +10,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_text_splitters import RecursiveCharacterTextSplitter 
 
 
+
 # --- Ortam değişkenlerini yükle (.env dosyasından) ---
 load_dotenv()
 google_api_key = os.getenv("GOOGLE_API_KEY")
