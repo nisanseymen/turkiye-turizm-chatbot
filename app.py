@@ -13,6 +13,9 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # --- Ortam değişkenlerini yükle (.env dosyasından) ---
 load_dotenv()
+
+st.set_page_config(page_title="Discover Türkiye Chatbot", page_icon="🇹🇷")
+
 google_api_key = os.getenv("GOOGLE_API_KEY")
 
 if not google_api_key:
@@ -20,7 +23,7 @@ if not google_api_key:
     st.stop()
 
 # --- Streamlit sayfa başlığı ---
-st.set_page_config(page_title="Discover Türkiye Chatbot", page_icon="🇹🇷")
+
 st.title("🇹🇷 Discover Türkiye Chatbot")
 st.write("Türkiye’deki şehirleri keşfedin! Bana sorular sorun, sohbet edelim.")
 
@@ -39,19 +42,7 @@ def load_and_process_data():
     vectordb = Chroma.from_documents(docs, embeddings)
     return vectordb
 
-# --- Hata Yakalama Bloğu ---
-try:
-    # Veritabanını yüklemeyi dene
-    vectordb = load_and_process_data()
-except Exception as e:
-    # Eğer yükleme başarısız olursa (API hatası, Dosya bulunamadı vs.)
-    st.error(f"❌ UYGULAMA BAŞLATILIRKEN HATA OLUŞTU:")
-    st.error(f"Hata Detayı: {e}")
-    st.warning("Lütfen aşağıdaki iki adımı kontrol edin:")
-    st.info("1. Streamlit Secrets bölümündeki GOOGLE_API_KEY anahtarınızın doğru ve geçerli olduğundan emin olun.")
-    st.info("2. 'turkiye_turizm.txt' dosyasının GitHub reponuzda 'app.py' ile aynı dizinde olduğundan emin olun.")
-    st.stop()
-# --- Bitiş ---
+vectordb = load_and_process_data() #Embedding’lenmiş verileri içerir
 
 # --- Prompt Şablonları ---
 # Bu bölümde modelin nasıl düşüneceğini ve cevap vereceğini tanımlayan iki ayrı "prompt şablonu" oluşturuluyor
